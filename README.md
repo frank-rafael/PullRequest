@@ -11,6 +11,7 @@
 
 1. Root directory contains a `docker-compose.yml` file. Run `docker-compose up -d` to create docker containers in detached mode.
 2. Go to directory `transaction-manager-ms`
+
     2.1. Run `npm i` to install dependencies.
     2.2. Create the .env file with the following values.
 
@@ -18,6 +19,7 @@
     2.3. Run `npm start:dev` to start the microservice.
 
 3. Go to directory `anti-fraud-ms`
+
     3.1. Run `npm i` to install dependencies.
     3.2. Create the .env file with the following values.
 
