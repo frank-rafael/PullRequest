@@ -8,14 +8,14 @@
 - Docker
 
 ## Initial Setup
-~~~
+
 1. Root directory contains a `docker-compose.yml` file. Run `docker-compose up -d` to create docker containers in detached mode.
 2. Go to directory `transaction-manager-ms`
     2.1. Run `npm i` to install dependencies.
     2.2. Create the .env file with the following values.
     ```
     API_PORT=5001
-    DATABASE_URL=postgresql://postgres_user_test:postgres_pass_test@localhost:5432/reto_yape_dev?connect_timeout=300
+    DATABASE_URL=postgresql://<USER>:<PASS>@localhost:5432/reto_yape_dev?connect_timeout=300
     KAFKA_BROKER=localhost:9092
     ```
     2.2. Run `npm start:prisma` to generate prisma dependencies.
@@ -26,11 +26,11 @@
     3.2. Create the .env file with the following values.
     ```
     API_PORT=5001
-    DATABASE_URL=postgresql://postgres_user_test:postgres_pass_test@localhost:5432/reto_yape_dev?connect_timeout=300
+    DATABASE_URL=postgresql://<USER>:<PASS>@localhost:5432/reto_yape_dev?connect_timeout=300
     KAFKA_BROKER=localhost:9092
     ```
     3.3. Run `npm start:dev` to start the microservice.
-~~~
+
 
 # GraphQL API Documentation
 
